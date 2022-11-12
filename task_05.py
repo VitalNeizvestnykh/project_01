@@ -17,3 +17,16 @@ for i in range(2, mounth + 1):
     summ = summ + expenses
    
 print('Необходимо взять в долг: ', "%.2f"%(summ - salary * mounth) , 'рублей')
+
+# Можно еще вот так
+# Решение 2
+salary, expenses = 10000, 12000
+
+i = expenses - salary
+m = 0
+debt = 0
+while m < 12:
+    mx = i * (1.03 ** m)
+    debt += mx
+    m += 1
+print(f'Необходимо взять в долг {round(debt, 2)} рублей')
