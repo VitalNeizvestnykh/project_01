@@ -43,3 +43,5 @@ for name_goods in titles:
         total_price = total_price + quantity_price['quantity'] * quantity_price['price']
         total_quantity += quantity_price['quantity']
     print(name_goods, '-', total_quantity, 'шт, общей стоимостью', total_price, 'рублей.')
+    
+#   Отлично 
