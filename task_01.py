@@ -8,3 +8,5 @@ my_favorite_songs = 'Waste a Moment, Staying\' Alive, A Sorta Fairytale, Start M
 songs = my_favorite_songs.split(', ')
 
 print(songs[0], songs[-1], songs[1], songs[-2])
+
+# Отлично
