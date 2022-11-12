@@ -12,3 +12,14 @@ if month in month31:print(31)
 elif month in month30:print(30)
 elif month in month28:print(28)
 else: print('Нет такого месяца.')
+  
+# Хорошо. Если интересно то моэжно сделать еще так
+# Решение 2
+import calendar as cl  # используем модуль для получения функции
+
+year_input = input("Введите год: ")
+month_input = input("Введите номер месяца: ")
+
+year = int(year_input)
+month_ = int(month_input)
+print(cl.monthrange(year, month_))
