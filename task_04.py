@@ -35,3 +35,12 @@ print('Длина "{}" - {}'.format(f_name, f_timestamp))
 print('Длина "{}" - {}'.format(s_name, s_timestamp))
 print('Длина "{}" - {}'.format(t_name, t_timestamp))
 print('Три песни звучат',("%.2f"%(time_sum)),'минут')
+
+# Отлично! Можно ещё так
+# Решение 2
+time = 0
+for song in sample(my_favorite_songs, 3):
+    print(song[0])
+    time += song[1]
+
+print(f'Три песни звучат {round(time, 2)}')
